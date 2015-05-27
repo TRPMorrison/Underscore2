@@ -1,8 +1,8 @@
 var animal = {
-  type: 'Monkey',
-  name: 'George',
-  origin: 'Amazon',
-  eats: 'Bananas'
+    type: 'Monkey',
+    name: 'George',
+    origin: 'Amazon',
+    eats: ['Bananas', 'Figs', 'Date']
 };
 
 
@@ -17,4 +17,7 @@ var templateFunction = _.template(templateString);
 // console.dir(templateFunction);
 
 var finalHTML = templateFunction(animal);
-console.log(finalHTML);
+// TEST FOR ERRORS
+// console.log(finalHTML);
+
+$('.container').html(finalHTML);
